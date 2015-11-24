@@ -1,0 +1,26 @@
+{
+  "name": "angular-viewportmise",
+  "main": "angular-viewportmise.js",
+  "version": "0.0.1",
+  "authors": [
+    "Adrián Gómez Llorente <adgllorente@gmail.com>"
+  ],
+  "description": "Angular directive that executes a promise when it is in the viewport or not. It also adds some classes to DOM to know if it is loading, loaded on in an error status.",
+  "license": "MIT",
+  "homepage": "https://github.com/adgllorente/angular-viewportmise",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adgllorente/angular-viewportmise.git"
+  },
+  "dependencies": {
+    "angular-inview": "~1.5.6",
+    "angular": "~1.4.8"
+  }
+}

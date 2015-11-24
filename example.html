@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angular-inview/angular-inview.js"></script>
+    <script src="./demo/demo.js"></script>
+    <script src="./angular-viewportmise.js"></script>
+    <link rel="stylesheet" href="./demo/demo.css" />
+  </head>
+  <body data-ng-app="app">
+    <div data-ng-controller="mainCtrl">
+      <div data-ng-repeat="i in ::iterator">
+        <div data-ng-controller="testCtrl">
+          <!-- This directives will be executed inside viewport-->
+          <p data-vpm data-loader="::getTestData"
+              data-load-on-viewport="true"
+              data-ng-bind="::data">
+          </p>
+        </div>
+      </div>
+      <div data-ng-controller="testCtrl">
+        <!-- This directive will be executed without being on viewport-->
+        <p data-vpm data-loader="::getTestData"
+            data-ng-bind="::data">
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

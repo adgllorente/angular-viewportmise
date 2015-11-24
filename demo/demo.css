@@ -1,0 +1,17 @@
+.vpm {
+  border: 5px solid grey;
+  margin: 5px;
+  height: 50px;
+}
+
+.vpm-loading {
+  background-color: yellow;
+}
+
+.vpm-error {
+  background-color: red;
+}
+
+.vpm-loaded {
+  background-color: green;
+}
